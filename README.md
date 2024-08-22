@@ -64,13 +64,13 @@ export DISPLAY=:0
 firefox
 ```
 
-### Change To Mac OS Style
+#### Change To Mac OS Style (Restart Terminal)
 ```
 win2mac
 
 ```
 
-### Change to Windows 11 Style
+#### Change To Windows 11 Style (Restart Terminal)
 ```
 mac2win
 ```
