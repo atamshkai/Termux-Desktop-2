@@ -67,7 +67,6 @@ firefox
 #### Change To Mac OS Style (Restart Terminal)
 ```
 win2mac
-
 ```
 
 #### Change To Windows 11 Style (Restart Terminal)
