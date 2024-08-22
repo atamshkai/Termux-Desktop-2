@@ -23,7 +23,7 @@ mv ~/.zshrc ~/.zshrc.mac
 mv ~/.zshrc.win ~/.zshrc" >>~/../usr/bin/mac2win
 chmod +x ~/../usr/bin/mac2win
 rm -rf ~/win.tar.xz
-wget https://archive.org/download/atamshkaitermux-desktopwin/win.tar.xz
+wget https://archive.org/download/github-atamshkai-termux-desktop2/win.tar.xz
 tar -xvJf win.tar.xz
 echo "termux-x11 :0 -xstartup 'dbus-launch --exit-with-session startxfce4' &>/dev/null" >>~/../usr/bin/tm-x11
 chmod +x ~/../usr/bin/tm-x11
