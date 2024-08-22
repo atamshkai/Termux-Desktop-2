@@ -64,12 +64,12 @@ export DISPLAY=:0
 firefox
 ```
 
-#### Change To Mac OS Style (Restart Terminal)
+#### Change To Mac OS Style (Restart Termux) 🍎
 ```
 win2mac
 ```
 
-#### Change To Windows 11 Style (Restart Terminal)
+#### Change To Windows 11 Style (Restart Termux) 🪟
 ```
 mac2win
 ```
