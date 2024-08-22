@@ -13,8 +13,9 @@ echo "mv ~/.config ~/.config.win && mv ~/.config.mac ~/.config" >>~/../usr/bin/w
 chmod +x ~/../usr/bin/win2mac
 echo "mv ~/.config ~/.config.mac && mv ~/.config.win ~/.config" >>~/../usr/bin/mac2win
 chmod +x ~/../usr/bin/mac2win
+rm -rf ~/win.tar.xz
 wget https://archive.org/download/atamshkai-win-termux-x11/win.tar.xz
-tar -xvJf termux-desktop.tar.xz
+tar -xvJf win.tar.xz
 echo "termux-x11 :0 -xstartup 'dbus-launch --exit-with-session startxfce4' &>/dev/null" >>~/../usr/bin/tm-x11
 chmod +x ~/../usr/bin/tm-x11
 echo "pkill -f 'app_process / com.termux.x11'" >>~/../usr/bin/stop-tm-x11
