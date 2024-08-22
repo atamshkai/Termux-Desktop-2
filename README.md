@@ -50,7 +50,7 @@ stop-tm-x11
 
 ##### Example For PRoot Distros
 
-###### Open Terminal On Termux Desktop
+##### Open Terminal On Termux Desktop
 ```
 proot-distro login ubuntu --shared-tmp
 ```
