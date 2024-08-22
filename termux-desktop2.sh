@@ -1,16 +1,23 @@
 pkg up -y && pkg i -y x11-repo tur-repo && pkg i -y audacious parole zsh proot-distro pulseaudio termux-x11-nightly chromium firefox xfce4 xfce4-goodies feathernotes xfce-theme-manager xfce4-terminal xfce4-appmenu-plugin geany && apt install -y netsurf synaptic
 cd $HOME
-rm -rf ~/.zshrc
+mv .zshrc .zshrc.mac
 wget https://github.com/atamshkai/Termux-Zsh/raw/main/zsh.tar.xz 
 tar -xvJf zsh.tar.xz && mv ~/zsh/.* ~/
 rm -rf ~/zsh
+rm -rf ~/.zsh_history
 chsh -s zsh 
-echo "killall pulseaudio &>/dev/null" >>~/.zshrc 
-echo "pulseaudio --start --exit-idle-time=-1; pacmd load-module module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" >>~/.zshrc 
+wget https://github.com/atamshkai/Termux-Desktop-2/raw/main/.zshrc
+wget https://github.com/atamshkai/Termux-Desktop-2/raw/main/.zsh_history
 mv ~/.config ~/.config.mac
-echo "mv ~/.config ~/.config.win && mv ~/.config.mac ~/.config" >>~/../usr/bin/win2mac
+echo "mv ~/.config ~/.config.win
+mv ~/.config.mac ~/.config
+mv ~/.zshrc ~/.zshrc.win
+mv ~/.zshrc.mac ~/.zshrc" >>~/../usr/bin/win2mac
 chmod +x ~/../usr/bin/win2mac
-echo "mv ~/.config ~/.config.mac && mv ~/.config.win ~/.config" >>~/../usr/bin/mac2win
+echo "mv ~/.config ~/.config.mac
+mv ~/.config.win ~/.config
+mv ~/.zshrc ~/.zshrc.mac
+mv ~/.zshrc.win ~/.zshrc" >>~/../usr/bin/mac2win
 chmod +x ~/../usr/bin/mac2win
 rm -rf ~/win.tar.xz
 wget https://archive.org/download/atamshkai-win-termux-x11/win.tar.xz
