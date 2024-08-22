@@ -4,6 +4,7 @@ mv .zshrc .zshrc.mac
 wget https://github.com/atamshkai/Termux-Zsh/raw/main/zsh.tar.xz 
 tar -xvJf zsh.tar.xz && mv ~/zsh/.* ~/
 rm -rf ~/zsh
+rm -rf ~/.zshrc
 rm -rf ~/.zsh_history
 chsh -s zsh 
 wget https://github.com/atamshkai/Termux-Desktop-2/raw/main/.zshrc
@@ -26,10 +27,6 @@ echo "termux-x11 :0 -xstartup 'dbus-launch --exit-with-session startxfce4' &>/de
 chmod +x ~/../usr/bin/tm-x11
 echo "pkill -f 'app_process / com.termux.x11'" >>~/../usr/bin/stop-tm-x11
 chmod +x ~/../usr/bin/stop-tm-x11
-wget https://github.com/atamshkai/Termux-Desktop/raw/main/loader.apk
-rm -rf /data/data/com.termux/files/usr/libexec/termux-x11/loader.apk
-mv loader.apk /data/data/com.termux/files/usr/libexec/termux-x11
-chmod +x /data/data/com.termux/files/usr/libexec/termux-x11/loader.apk
 echo "Please Login Again"
 sleep 3
 exit
