@@ -4,8 +4,7 @@ pkg up -y && pkg i -y x11-repo tur-repo && pkg i -y audacious parole zsh proot-d
 cd $HOME
 mv .zshrc .zshrc.mac
 wget https://github.com/atamshkai/Termux-Zsh/raw/main/zsh.tar.xz 
-tar -xvJf zsh.tar.xz && mv ~/zsh/.* ~/
-rm -rf ~/zsh
+tar -xvJf zsh.tar.xz
 rm -rf ~/.zshrc
 rm -rf ~/.zsh_history
 chsh -s zsh 
@@ -33,4 +32,4 @@ echo "pkill -f com.termux.x11" >>~/../usr/bin/stop-tm-x11
 chmod +x ~/../usr/bin/stop-tm-x11
 echo "Please Login Again"
 sleep 3
-exit
+exec exit
