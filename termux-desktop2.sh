@@ -25,8 +25,10 @@ chmod +x ~/../usr/bin/mac2win
 rm -rf ~/win.tar.xz
 wget https://archive.org/download/github-atamshkai-termux-desktop2/win.tar.xz
 tar -xvJf win.tar.xz
-echo "termux-x11 :0 -xstartup 'dbus-launch --exit-with-session startxfce4' &>/dev/null" >>~/../usr/bin/tm-x11
+rm -rf ~/../usr/bin/tm-x11
+echo "termux-x11 :0 -xstartup 'dbus-launch --exit-with-session xfce4-session' &>/dev/null" >>~/../usr/bin/tm-x11
 chmod +x ~/../usr/bin/tm-x11
+rm -rf ~/../usr/bin/stop-tm-x11
 echo "pkill -f com.termux.x11" >>~/../usr/bin/stop-tm-x11
 chmod +x ~/../usr/bin/stop-tm-x11
 echo "Please Login Again"
