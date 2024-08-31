@@ -26,6 +26,11 @@ pkg up -y && pkg i -y wget;cd $HOME;wget https://raw.githubusercontent.com/atams
 termux-setup-storage
 ```
 
+### Start Desktop
+```
+tm-x11 &>/dev/null
+```
+
 ### Link STORAGE To Desktop
 ```
 ln -s /sdcard ~/Desktop/Storage
@@ -34,11 +39,6 @@ ln -s /sdcard ~/Desktop/Storage
 #### Link SDCARD To Desktop (Optional)
 ```
 ln -s /storage/sdcard-name ~/Desktop/sdcard
-```
-
-### Start Desktop
-```
-tm-x11 &>/dev/null
 ```
 
 ### Stop Desktop 
