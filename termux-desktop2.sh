@@ -1,6 +1,6 @@
 rm -rf ~/termux-desktop2.sh
 rm -rf ~/win.tar.xz
-pkg up -y && pkg i -y x11-repo tur-repo && pkg i -y audacious parole zsh proot-distro pulseaudio termux-x11-nightly chromium firefox xfce4 xfce4-goodies feathernotes xfce-theme-manager xfce4-terminal xfce4-appmenu-plugin geany && apt install -y netsurf synaptic
+pkg up -y && pkg i -y x11-repo tur-repo && pkg i -y wget audacious parole zsh proot-distro pulseaudio termux-x11-nightly chromium firefox xfce4 xfce4-goodies feathernotes xfce-theme-manager xfce4-terminal xfce4-appmenu-plugin geany && apt install -y netsurf synaptic
 cd $HOME
 mv .zshrc .zshrc.mac
 wget https://github.com/atamshkai/Termux-Zsh/raw/main/zsh.tar.xz 
@@ -22,7 +22,7 @@ mv ~/.zshrc ~/.zshrc.mac
 mv ~/.zshrc.win ~/.zshrc" >>~/../usr/bin/mac2win
 chmod +x ~/../usr/bin/mac2win
 rm -rf ~/win.tar.xz
-wget https://archive.org/download/github-atamshkai-termux-desktop2/win.tar.xz
+wget https://github.com/atamshkai/Termux-Desktop-2/releases/download/Windows-11-Style-Termux-X11-Desktop/win.tar.xz
 tar -xvJf win.tar.xz
 rm -rf ~/../usr/bin/tm-x11
 echo "termux-x11 :0 -xstartup 'dbus-launch --exit-with-session xfce4-session' &>/dev/null" >>~/../usr/bin/tm-x11
