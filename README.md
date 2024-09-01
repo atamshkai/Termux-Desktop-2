@@ -13,7 +13,7 @@ Deactive phantom process killer.
 
 ### To Do 
 
-#### (Use A VPN For Tor Packages)
+#### (Use A VPN For Tur Packages)
 
 Paste this command to termux's terminal
 
