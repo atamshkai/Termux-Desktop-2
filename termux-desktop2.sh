@@ -31,5 +31,4 @@ rm -rf ~/../usr/bin/stop-tm-x11
 echo "pkill -f com.termux.x11" >>~/../usr/bin/stop-tm-x11
 chmod +x ~/../usr/bin/stop-tm-x11
 echo "Please Login Again"
-sleep 3
-exec exit
+exit
