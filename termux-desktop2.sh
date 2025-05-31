@@ -30,5 +30,6 @@ chmod +x ~/../usr/bin/tm-x11
 rm -rf ~/../usr/bin/stop-tm-x11
 echo "pkill -f com.termux.x11" >>~/../usr/bin/stop-tm-x11
 chmod +x ~/../usr/bin/stop-tm-x11
+echo "load-module module-aaudio-sink" >>/data/data/com.termux/files/usr/etc/pulse/default.pa
 echo "Please Login Again"
 exit
