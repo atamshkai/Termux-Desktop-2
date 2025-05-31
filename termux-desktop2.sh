@@ -2,7 +2,7 @@ rm -rf ~/termux-desktop2.sh
 rm -rf ~/win.tar.xz
 pkg up -y && pkg i -y x11-repo tur-repo && pkg i -y wget audacious parole zsh proot-distro pulseaudio termux-x11-nightly chromium firefox xfce4 xfce4-goodies feathernotes xfce-theme-manager xfce4-terminal xfce4-appmenu-plugin geany && apt install -y netsurf synaptic
 cd $HOME
-mv .zshrc .zshrc.mac
+mv ~/.zshrc ~/.zshrc.mac
 wget https://github.com/atamshkai/Termux-Zsh/raw/main/zsh.tar.xz 
 tar -xvJf zsh.tar.xz
 rm -rf ~/.zshrc
@@ -30,6 +30,6 @@ chmod +x ~/../usr/bin/tm-x11
 rm -rf ~/../usr/bin/stop-tm-x11
 echo "pkill -f com.termux.x11" >>~/../usr/bin/stop-tm-x11
 chmod +x ~/../usr/bin/stop-tm-x11
-echo "load-module module-aaudio-sink" >>/data/data/com.termux/files/usr/etc/pulse/default.pa
+#echo "load-module module-aaudio-sink" >>/data/data/com.termux/files/usr/etc/pulse/default.pa
 echo "Please Login Again"
 exit
