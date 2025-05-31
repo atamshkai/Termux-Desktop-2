@@ -11,11 +11,13 @@ chsh -s zsh
 wget https://github.com/atamshkai/Termux-Desktop-2/raw/main/.zshrc
 wget https://github.com/atamshkai/Termux-Desktop-2/raw/main/.zsh_history
 mv ~/.config ~/.config.mac
+rm -rf ~/../usr/bin/win2mac
 echo "mv ~/.config ~/.config.win
 mv ~/.config.mac ~/.config
 mv ~/.zshrc ~/.zshrc.win
 mv ~/.zshrc.mac ~/.zshrc" >>~/../usr/bin/win2mac
 chmod +x ~/../usr/bin/win2mac
+rm -rf ~/../usr/bin/mac2win
 echo "mv ~/.config ~/.config.mac
 mv ~/.config.win ~/.config
 mv ~/.zshrc ~/.zshrc.mac
